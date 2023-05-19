@@ -1,9 +1,13 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/sdamascena/gocurso/variables"
 )
 
 func main() {
-	variables.MuestrarEnteros()
+	Estado, texto := variables.CoviertoaTexto(1588)
+	fmt.Println(Estado)
+	fmt.Println(texto)
 }
